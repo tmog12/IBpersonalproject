@@ -1,0 +1,6 @@
+import random
+
+greetings = ['Hello', 'hi', 'Hey', 'How are you', 'Nice day isnt it']
+
+value = random.randint(greetings, k=1)
+print(value)
