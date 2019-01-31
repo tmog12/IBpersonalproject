@@ -1,6 +1,10 @@
 import random
+import csv
 
-greetings = ['Hello', 'hi', 'Hey', 'How are you', 'Nice day isnt it']
+with open ('Task Tracking - all tabs - CSV feed (1).csv', 'r') as csv_file:
+csv_reader = csv.reader(csv_file)
 
-value = random.randint(greetings, k=1)
-print(value)
+next(csv_reader)
+
+for line in csv_reader:
+  print(line)
