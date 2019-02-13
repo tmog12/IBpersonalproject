@@ -1,12 +1,10 @@
 import random
-import csv
 
-with open ('list.csv', newline='') as csv_file:
-    csv_reader = csv.reader(csv_file)
-    rownum = len(list(csv_file))
-    print(rownum)
+result = None
+with open ('list.txt', 'r') as fin:
+    range (1)
+    lines = fin.readlines()
+    index = random.randint(0, len(lines)-1)
+    result = lines[index]
 
-
-    next(csv_file)
-    for line in csv_reader:
-        print(line)
+    print(result)
